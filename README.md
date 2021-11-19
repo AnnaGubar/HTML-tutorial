@@ -9,12 +9,12 @@
 
 - HTML Living Standard - справочник тегов
   https://html.spec.whatwg.org/multipage/
-
 - _справочник CSS-свойств_ https://htmlreference.io
-
 - _семантика тегов_
   https://html.spec.whatwg.org/multipage/dom.html#kinds-of-content
-
 - Тэг `<section>` бронирует один уровень заголовка даже если его нет.
-
 - _Валидатор разметки_ https://validator.w3.org/nu/
+- Для оптимизации _растовой_ графики https://squoosh.app
+- Для оптимизации _векторной_ графики https://jakearchibald.github.io/svgomg/
+- **Руководство по написанию кода** http://sadcitizen.me/code-guide/
+- Гайд по _DevTools_ https://developer.chrome.com/docs/devtools/
