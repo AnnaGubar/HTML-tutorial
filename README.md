@@ -1,6 +1,6 @@
-- HyperText Markup Language
+- **HyperText Markup Language**
 
-- <a href="http://google.com" target="_blank" title="Поисковая система Google">Google.com</a>
+- `<a href="http://google.com" target="_blank" title="Поисковая система Google">Google.com</a>`
 
 - href - адрес страницы на которую перейдёт пользователь при нажатии на текст
   ссылки.
@@ -10,11 +10,11 @@
 - HTML Living Standard - справочник тегов
   https://html.spec.whatwg.org/multipage/
 
-- справочник CSS-свойств https://htmlreference.io
+- _справочник CSS-свойств_ https://htmlreference.io
 
-- https://html.spec.whatwg.org/multipage/dom.html#kinds-of-content семантика
-  тегов
+- _семантика тегов_
+  https://html.spec.whatwg.org/multipage/dom.html#kinds-of-content
 
-- Тэг <section> бронирует один уровень заголовка даже если его нет.
+- Тэг `<section>` бронирует один уровень заголовка даже если его нет.
 
-- Валидатор разметки https://validator.w3.org/nu/
+- _Валидатор разметки_ https://validator.w3.org/nu/
