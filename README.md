@@ -1,23 +1,28 @@
-- _https://developer.mozilla.org/ru/docs/Web/HTML/Element?section_ семантика
-  проще
+- **.block** - создаст `<div class="block"></div>`
+- **h1.title** - создает `<h1 class="title"></h1>`
 
-- `ul>(li>a)*3` - вложение `<а>` в `<li>`
-- `h1{some text}` - наполнение внутри тега
+* **CSS (Cascading Style Sheets, каскадные таблицы стилей)**
 
-* `header>a>img^nav>ul>(li*4)^^a+button`
+* **_ВАЖНО_** определить основную палитру цветов и записать ее
 
-  - `^`- возвращает на уровень выше по разметке
-  - `a+button` - пишет тег `button` на одном уровне с `a`
+  - `:root { --primary-text-color: #2e7a70; }`
+  - `body { color: var(--primary-text-color); } `
 
-* `<a href="http://google.com" target="_blank" title="Поисковая система Google" rel=" noopener"> Google.com </a>`
-  - _href_ - адрес страницы на которую перейдёт пользователь при нажатии на
-    текст ссылки.
-  - _target_ - указывает то, в какой вкладке откроется страница при клике по
-    ссылке.
-  - _title_ - добавляет всплывающую подсказку к тексту ссылки.
-  - _noopener_ - для безопасности
-  - _noreferrer_ - предотвращает передачу источника при переходе на новую
-    вкладку
-  - _nofollow_ - запрещает поисковм системам переходить по ссылкам на странице
+* **_селекторы_**
+  - _.button.primary_ - тег имеет оба класса button и primary
+  - _.button > .primary_ - тег с классом primary является _ребенком_ тега с
+    классом button
+  - _.button .primary_ - тег с классом primary является _потомком_ тега с
+    классом button
 
-- **Логотип** обязательно **.png** - так как он прозрачен
+- _:hover :focus_ - всегда вместе
+- _.link:active_ - отметка текущей страницы
+- _.link:visited_
+
+- `a { text-decoration: none; }` - убирает подчеркивание
+- `ul { list-style: none; }` - убирает маркировку
+- `#title {...}` - _идентификатор_
+
+- `.post-link { color: inherit; }` - унаследывает цвет родителя
+- `.button.primary { background-color: var(--accent-color); border-color: transparent; }` -
+  цвет рамки унаследует цвет фона
