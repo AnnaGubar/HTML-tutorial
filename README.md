@@ -13,7 +13,9 @@
   - _.button > .primary_ - тег с классом primary является _ребенком_ тега с
     классом button
   - _.button .primary_ - тег с классом primary является _потомком_ тега с
-    классом button
+  - _.button + .primary_ - _primary_ первый сосед _button_
+  - _.button ~ .primary_ - ищет на одном уровне вложенности (сосед на одном
+    этаже)
 
 - _:hover :focus_ - всегда вместе
 - _.link:active_ - отметка текущей страницы
