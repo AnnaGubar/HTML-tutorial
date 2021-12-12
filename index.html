@@ -18,21 +18,29 @@
     <h1 class="title"></h1>
     <!-- шапка сайта -->
     <header class="page-header">
-      <nav class="container">
+      <nav class="container main-nav">
         <a href="/" class="logo">
           <img src="./images/logo.svg" alt="" />photo
         </a>
 
         <ul class="site-nav">
-          <li><a href="./index.html" class="link current">Features</a></li>
-          <li><a href="./community.html" class="link">Community</a></li>
-          <li><a href="./positioning.html" class="link">Another markup</a></li>
-          <li><a href="./barbershop.html" class="link">BarberShop</a></li>
+          <li class="item">
+            <a href="./index.html" class="link current">Features</a>
+          </li>
+          <li class="item">
+            <a href="./community.html" class="link">Community</a>
+          </li>
+          <li class="item">
+            <a href="./positioning.html" class="link">Another markup</a>
+          </li>
+          <li class="item">
+            <a href="./barbershop.html" class="link">BarberShop</a>
+          </li>
         </ul>
 
         <ul class="auth-nav">
-          <li><a href="" class="button secondary">Log in</a></li>
-          <li><a href="" class="button primary">Register</a></li>
+          <li class="item"><a href="" class="button secondary">Log in</a></li>
+          <li class="item"><a href="" class="button primary">Register</a></li>
         </ul>
       </nav>
     </header>
@@ -46,11 +54,11 @@
       <!-- Преимущества -->
       <section class="section">
         <div class="container">
-          <h2 class="section-title">
+          <h2 class="section-title left-title">
             Snap photos and share like<br />never before
           </h2>
           <ul class="features">
-            <li>
+            <li class="item">
               <h3 class="title">Lorem ipsum dolor</h3>
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia
@@ -59,7 +67,7 @@
               </p>
               <a href="" class="button secondary">Learn more</a>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">Iusto adipisicing elit</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
@@ -67,7 +75,7 @@
               </p>
               <a href="" class="button secondary">Learn more</a>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">Galias mollitia, hic</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -76,7 +84,7 @@
               </p>
               <a href="" class="button secondary">Learn more</a>
             </li>
-            <li>
+            <li class="item">
               <h3 class="title">Consectetur adipisicing elit</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -86,6 +94,7 @@
             </li>
           </ul>
         </div>
+        n
       </section>
       <!-- Примеры работ -->
       <section class="section no-padding">
@@ -94,23 +103,27 @@
           <ul class="work">
             <li class="item">
               <img src="./images/placeholder.png" alt="" width="750" />
-              <h3 class="title">Lorem ipsum dolor sit amet consectetur</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Pariatur tempore quidem error veniam accusantium at voluptas
-                explicabo suscipit amet delectus, voluptatem non ipsum aliquid
-                nesciunt.
-              </p>
+              <div class="content">
+                <h3 class="title">Lorem ipsum dolor sit amet consectetur</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Pariatur tempore quidem error veniam accusantium at voluptas
+                  explicabo suscipit amet delectus, voluptatem non ipsum aliquid
+                  nesciunt.
+                </p>
+              </div>
             </li>
             <li class="item">
               <img src="./images/placeholder.png" alt="" width="750" />
-              <h3 class="title">Pariatur tempore quidem error veniam</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Pariatur tempore quidem error veniam accusantium at voluptas
-                explicabo suscipit amet delectus, voluptatem non ipsum aliquid
-                nesciunt.
-              </p>
+              <div class="content">
+                <h3 class="title">Pariatur tempore quidem error veniam</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Pariatur tempore quidem error veniam accusantium at voluptas
+                  explicabo suscipit amet delectus, voluptatem non ipsum aliquid
+                  nesciunt.
+                </p>
+              </div>
             </li>
           </ul>
         </div>
@@ -123,7 +136,7 @@
             laboriosam harum incidunt, veritatis recusandae repellendus quis,
             ratione amet delectus nostrum, quae aliquam ut id blanditiis at!
           </p>
-          <ul>
+          <ul class="clients-list">
             <li>
               <a href=""><img src="./images/icon.svg" alt="лого компании" /></a>
             </li>
@@ -153,7 +166,7 @@
       </section>
       <!-- Регистрация -->
       <section class="section">
-        <div class="container">
+        <div class="container flex">
           <p class="section-description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
             ut. Et sequi ratione quidem doloribus praesentium voluptatum at eum
