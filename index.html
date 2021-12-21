@@ -1,234 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Markup for training</title>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@400;500;700&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
+    <title>Фон и декоративные элементмы</title>
+    <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+
+    <style>
+      img {
+        outline: 1px solid black;
+      }
+
+      img:nth-of-type(2) {
+        background-color: palevioletred;
+      }
+
+      img:nth-of-type(3) {
+        background-color: teal;
+      }
+      img:nth-of-type(4) {
+        background-color: orange;
+      }
+    </style>
   </head>
   <body>
-    <h1 class="title"></h1>
-    <!-- шапка сайта -->
-    <header class="page-header">
-      <nav class="container main-nav">
-        <a href="/" class="logo">
-          <img src="./images/logo.svg" alt="" />photo
-        </a>
+    <ul class="nav">
+      <li><a href="/01-background.html">Фон элемента</a></li>
+      <li><a href="/02-multibg.html">Многослойный фон</a></li>
+      <li><a href="/03-pseudoelements.html">Псевдоэлементы</a></li>
+    </ul>
 
-        <ul class="site-nav">
-          <li class="item">
-            <a href="./index.html" class="link current">Features</a>
-          </li>
-          <li class="item">
-            <a href="./community.html" class="link">Community</a>
-          </li>
-          <li class="item">
-            <a href="./positioning.html" class="link">Another markup</a>
-          </li>
-          <li class="item">
-            <a href="./barbershop.html" class="link">BarberShop</a>
-          </li>
-        </ul>
+    <img src="/images/red-poppies.jpg" alt="" />
 
-        <ul class="auth-nav">
-          <li class="item"><a href="" class="button secondary">Log in</a></li>
-          <li class="item"><a href="" class="button primary">Register</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <!-- Герой -->
-      <section class="hero">
-        <h1 class="hero-title">The largest community of photo enthusiasts</h1>
-        <a href="" class="button primary">Join Today</a>
-      </section>
-      <!-- Преимущества -->
-      <section class="section">
-        <div class="container">
-          <h2 class="section-title left-title">
-            Snap photos and share like<br />never before
-          </h2>
-          <ul class="features">
-            <li class="item">
-              <h3 class="title">Lorem ipsum dolor</h3>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia
-                dolor consectetur necessitatibus alias voluptates aspernatur
-                iure amet voluptatem laudantium?
-              </p>
-              <a href="" class="button secondary">Learn more</a>
-            </li>
-            <li class="item">
-              <h3 class="title">Iusto adipisicing elit</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,
-                ad provident. Quos dolores aperiam at!
-              </p>
-              <a href="" class="button secondary">Learn more</a>
-            </li>
-            <li class="item">
-              <h3 class="title">Galias mollitia, hic</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Eligendi repudiandae inventore mollitia earum omnis, quibusdam
-                qui assumenda nam et vitae quasi distinctio.
-              </p>
-              <a href="" class="button secondary">Learn more</a>
-            </li>
-            <li class="item">
-              <h3 class="title">Consectetur adipisicing elit</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repudiandae obcaecati magni eveniet ipsum illum. Doloribus?
-              </p>
-              <a href="" class="button secondary">Learn more</a>
-            </li>
-          </ul>
-        </div>
-        n
-      </section>
-      <!-- Примеры работ -->
-      <section class="section no-padding">
-        <div class="container">
-          <h2 class="section-title">Примеры работ</h2>
-          <ul class="work">
-            <li class="item">
-              <img src="./images/placeholder.png" alt="" width="750" />
-              <div class="content">
-                <h3 class="title">Lorem ipsum dolor sit amet consectetur</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Pariatur tempore quidem error veniam accusantium at voluptas
-                  explicabo suscipit amet delectus, voluptatem non ipsum aliquid
-                  nesciunt.
-                </p>
-              </div>
-            </li>
-            <li class="item">
-              <img src="./images/placeholder.png" alt="" width="750" />
-              <div class="content">
-                <h3 class="title">Pariatur tempore quidem error veniam</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Pariatur tempore quidem error veniam accusantium at voluptas
-                  explicabo suscipit amet delectus, voluptatem non ipsum aliquid
-                  nesciunt.
-                </p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!-- Клиенты -->
-      <section class="section">
-        <div class="container">
-          <h2 class="section-title">You are in the good company</h2>
-          <p class="section-description">
-            laboriosam harum incidunt, veritatis recusandae repellendus quis,
-            ratione amet delectus nostrum, quae aliquam ut id blanditiis at!
-          </p>
-          <ul class="clients-list">
-            <li>
-              <a href=""><img src="./images/icon.svg" alt="лого компании" /></a>
-            </li>
-            <li>
-              <a href=""><img src="./images/icon.svg" alt="лого компании" /></a>
-            </li>
-            <li>
-              <a href=""><img src="./images/icon.svg" alt="лого компании" /></a>
-            </li>
-            <li>
-              <a href=""><img src="./images/icon.svg" alt="лого компании" /></a>
-            </li>
-            <li>
-              <a href=""><img src="./images/icon.svg" alt="лого компании" /></a>
-            </li>
-            <li>
-              <a href=""><img src="./images/icon.svg" alt="лого компании" /></a>
-            </li>
-            <li>
-              <a href=""><img src="./images/icon.svg" alt="лого компании" /></a>
-            </li>
-            <li>
-              <a href=""><img src="./images/icon.svg" alt="лого компании" /></a>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!-- Регистрация -->
-      <section class="section">
-        <div class="container flex">
-          <p class="section-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
-            ut. Et sequi ratione quidem doloribus praesentium voluptatum at eum
-            quae impedit unde commodi, debitis corporis harum dolor
-            necessitatibus illum eaque!
-          </p>
-          <div>
-            <a href="" class="button primary">Join Today</a>
-            <a href="" class="button secondary">Contact us</a>
-          </div>
-        </div>
-      </section>
-    </main>
-    <!-- Подвал -->
-    <footer class="page-footer">
-      <a href="./index.html" class="logo">
-        <img src="./images/logo.svg" alt="Логотип компании" />
-        photo
-      </a>
-
-      <section>
-        <h2>External links</h2>
-
-        <h3>Mobile app</h3>
-        <ul>
-          <li><a href="">Features</a></li>
-          <li><a href="">Live share</a></li>
-          <li><a href="">Video record</a></li>
-        </ul>
-
-        <h3>Community</h3>
-        <ul>
-          <li><a href="">Featured artists</a></li>
-          <li><a href="">The Portal</a></li>
-          <li><a href="">Live events</a></li>
-        </ul>
-
-        <h3>Company</h3>
-        <ul>
-          <li><a href="">About us</a></li>
-          <li><a href="">Contact us</a></li>
-          <li><a href="">History</a></li>
-        </ul>
-      </section>
-
-      <ul class="auth-nav">
-        <li><a href="" class="button secondary">Register</a></li>
-        <li><a href="" class="button primary">Log in</a></li>
-      </ul>
-
-      <p class="copyright">&#169; Photo, Inc. 2019. We love our users!</p>
-
-      <div class="social">
-        <p class="label">Follow span:</p>
-
-        <ul>
-          <li><a href="" aria-label="Ссылка на Facebook">Facebook</a></li>
-          <li><a href="" aria-label="Ссылка на Twitter">Twitter</a></li>
-          <li><a href="" aria-label="Ссылка на Instagram">Instagram</a></li>
-          <li><a href="" aria-label="Ссылка на LinkedIn">LinkedIn</a></li>
-        </ul>
-      </div>
-    </footer>
+    <img src="./images/transparent-1.png" alt="" height="430" />
+    <img src="./images/transparent-2.png" alt="" height="430" />
+    <img src="./images/transparent-3.png" alt="" height="430" />
   </body>
 </html>
