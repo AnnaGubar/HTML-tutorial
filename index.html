@@ -1,47 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <title>Practice</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Переходы и анимация</title>
+    <link rel="stylesheet" href="./css/common.css" />
+
+    <style>
+      .scene {
+        perspective: 600px;
+        height: 300px;
+        width: 300px;
+
+        outline: 1px solid black;
+
+        overflow: hidden;
+      }
+
+      .box {
+        height: 100%;
+        background-color: teal;
+        transform: scale(0);
+
+        transition: transform 1000ms linear;
+      }
+
+      .scene:hover .box {
+        transform: scale(1) rotateZ(360deg);
+      }
+    </style>
   </head>
   <body>
-    <table>
-      <caption>
-        What is the difference between block, inline and inline-block
-      </caption>
-      <thead>
-        <tr>
-          <th>/</th>
-          <th>block</th>
-          <th>inline</th>
-          <th>inline-block</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th>height determined</th>
-          <td colspan="3">by height of content</td>
-        </tr>
-        <tr>
-          <th>width determined</th>
-          <td>by width of parent element</td>
-          <td colspan="2">by width of content</td>
-        </tr>
-        <tr>
-          <th>Is it possible to set height and width</th>
-          <td>yes</td>
-          <td>no</td>
-          <td>yes</td>
-        </tr>
-        <tr>
-          <th>How line wrapping works</th>
-          <td>always on a new line</td>
-          <td colspan="2">only when filling the width of the parent element</td>
-        </tr>
-      </tbody>
-    </table>
+    <ul>
+      <li>
+        <a href="./01-button.html">Простая кнопка</a>
+      </li>
+      <li>
+        <a href="./02-icon-button.html">Кнопка c иконкой</a>
+      </li>
+      <li>
+        <a href="./03-underline.html">Пункт меню с подчёркиванием</a>
+      </li>
+      <li>
+        <a href="./04-card-overlay.html">Карточка с появляющимся оверлеем</a>
+      </li>
+      <li>
+        <a href="./05-modal.html">Анимация модального окна</a>
+      </li>
+      <li>
+        <a href="./06-perspective.html">Флип с перспективой</a>
+      </li>
+    </ul>
+
+    <div class="scene">
+      <div class="box"></div>
+    </div>
   </body>
 </html>
